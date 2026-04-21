@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cred Finanças</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="#" aria-label="Cred Finanças">
+            <img
+              src="./img/logoCF.png"
+              alt="Logo da Cred Finanças"
+              class="logo btn--outline"
+            />
+          </a>
+
+          <nav class="desktop-nav" aria-label="Navegação principal">
+            <a href="#quem-somos">Quem Somos</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#solucoes">Soluções</a>
+          </nav>
+
+          <div class="header-actions">
+            <a
+              href="https://wa.me/1935007247"
+              class="btn btn--outline btn--sm client-btn"
+              id="cliente-btn"
+              target="_blank"
+              >WhatsApp <img src="./img/zappequeno.png" alt="WhatsApp"></a
+            >
+            <button
+              class="hamburger-btn"
+              id="hamburger"
+              aria-label="Abrir menu"
+            >
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu">
+        <a href="#solucoes" onclick="closeMobileMenu()">Soluções</a>
+        <a href="#como-funciona" onclick="closeMobileMenu()">Como Funciona</a>
+        <a href="#quem-somos" onclick="closeMobileMenu()">Quem Somos</a>
+        <a href="https://wa.me/1935007247" class="btn btn--primary" target="_blank">WhatsApp</a>
+      </div>
+    </header>
+    <section id="hero" class="hero-bg noise">
+      <div class="hero-deco-ring hero-deco-ring--lg"></div>
+      <div class="hero-deco-ring hero-deco-ring--sm"></div>
+
+      <div class="container">
+        <div class="hero-inner">
+          <!-- Copy -->
+          <div class="hero-copy">
+            <div class="hero-tag">
+              <span class="pill pill--emerald">
+                <i data-lucide="zap" style="width: 14px; height: 14px"></i>
+                Cred Finanças
+              </span>
+            </div>
+            <h1 class="hero-title">
+              Impulsionamos o sucesso do seu negócio com
+              <em>soluções financeiras inteligentes</em>
+            </h1>
+            <div class="hero-desc-container">
+              <p class="hero-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                natus illum commodi quibusdam molestias enim, numquam sit fugiat
+                cum obcaecati dolorum?
+              </p>
+            </div>
+            <div class="hero-ctas">
+              <a href="#simulador" class="btn btn--primary btn--md">
+                Simular agora
+                <i
+                  data-lucide="arrow-right"
+                  style="width: 16px; height: 16px"
+                ></i>
+              </a>
+              <a href="#como-funciona" class="btn btn--outline btn--md">
+                Como funciona
+              </a>
+            </div>
+            <div class="trust-badges">
+              <div class="trust-badge">
+                <i
+                  data-lucide="shield-check"
+                  style="width: 16px; height: 16px; color: var(--mainColor)"
+                ></i>
+                SSL 256-bit
+              </div>
+              <div class="trust-badge">
+                <i
+                  data-lucide="landmark"
+                  style="width: 16px; height: 16px; color: var(--mainColor)"
+                ></i>
+                CCB Regulamentado
+              </div>
+              <div class="trust-badge">
+                <i
+                  data-lucide="star"
+                  style="width: 16px; height: 16px; color: var(--mainColor)"
+                ></i>
+                4.9 ★ (1.200 empresas)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave">
+        <svg
+          viewBox="0 0 1440 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 60 C360 0 1080 0 1440 60 L1440 60 L0 60Z" fill="#fff" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+      TICKER
+  ══════════════════════════════════════ -->
+    <div class="ticker">
+      <div class="ticker-inner">
+        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Ainda vai definir2</span>
+        <span class="ticker-item">✦ Ainda vai definir3</span>
+        <span class="ticker-item">✦ Ainda vai definir4</span>
+        <span class="ticker-item">✦ Ainda vai definir5</span>
+        <span class="ticker-item">✦ Ainda vai definir6</span>
+        <span class="ticker-item">✦ Ainda vai definir7</span>
+        <!-- duplicate for seamless loop -->
+        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Ainda vai definir</span>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+      BENEFÍCIOS
+  ══════════════════════════════════════ -->
+    <section id="solucoes">
+      <div class="container">
+        <div class="section-header">
+          <span class="pill pill--light">
+            <i data-lucide="sparkles" style="width: 14px; height: 14px"></i>
+            Por que nos escolher
+          </span>
+          <h2 class="section-title"></h2>
+          <p class="section-desc">
+            Desenvolvemos cada detalhe para que sua empresa tenha o melhor
+            acesso a crédito do mercado.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i
+                data-lucide="trending-down"
+                style="width: 20px; height: 20px"
+              ></i>
+            </div>
+            <h3 class="benefit-title">Definir ainda</h3>
+            <p class="benefit-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i
+                data-lucide="badge-percent"
+                style="width: 20px; height: 20px"
+              ></i>
+            </div>
+            <h3 class="benefit-title">Definir ainda</h3>
+            <p class="benefit-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+            </p>
+          </div>
+
+          <div class="benefit-card benefit-card--emerald">
+            <div class="benefit-icon">
+              <i data-lucide="clock" style="width: 20px; height: 20px"></i>
+            </div>
+            <h3 class="benefit-title">Definir ainda</h3>
+            <p class="benefit-desc">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i data-lucide="smartphone" style="width: 20px; height: 20px"></i>
+            </div>
+            <h3 class="benefit-title">Definir ainda</h3>
+            <p class="benefit-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+      COMO FUNCIONA
+  ══════════════════════════════════════ -->
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <span class="pill pill--white">
+            <i data-lucide="map" style="width: 14px; height: 14px"></i>
+            Processo
+          </span>
+          <h2 class="section-title">Do cadastro ao dinheiro em 3 passos</h2>
+        </div>
+
+        <div class="steps-row">
+          <div class="step">
+            <div class="step-icon-wrap">
+              <div class="step-icon">
+                <i
+                  data-lucide="user-plus"
+                  style="width: 32px; height: 32px; color: var(--mainColor)"
+                ></i>
+              </div>
+              <span class="step-num">1</span>
+            </div>
+            <h3 class="step-title">Definir ainda</h3>
+            <p class="step-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+            </p>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <div class="step">
+            <div class="step-icon-wrap">
+              <div class="step-icon">
+                <i
+                  data-lucide="file-text"
+                  style="width: 32px; height: 32px; color: var(--mainColor)"
+                ></i>
+              </div>
+              <span class="step-num">2</span>
+            </div>
+            <h3 class="step-title">Definir ainda</h3>
+            <p class="step-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+            </p>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <div class="step step--final">
+            <div class="step-icon-wrap">
+              <div class="step-icon">
+                <i
+                  data-lucide="banknote"
+                  style="width: 32px; height: 32px; color: #fff"
+                ></i>
+              </div>
+              <span class="step-num">3</span>
+            </div>
+            <h3 class="step-title">Definir ainda</h3>
+            <p class="step-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+            </p>
+          </div>
+        </div>
+
+        <div class="how-cta">
+          <a href="#simulador" class="btn btn--primary btn--md">
+            Começar agora
+            <i data-lucide="arrow-right" style="width: 18px; height: 18px"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+      QUEM SOMOS
+  ══════════════════════════════════════ -->
+    <section id="quem-somos">
+      <div class="container">
+        <div class="about-grid">
+          <div class="stats-card noise">
+            <div class="stats-card-glow"></div>
+            <p class="stats-total">+R$ 2,4 bi</p>
+            <p class="stats-total-sub">em recebíveis antecipados</p>
+            <div class="stats-grid">
+              <div class="stats-item">
+                <p class="stats-value">1.200+</p>
+                <p class="stats-label">Empresas atendidas</p>
+              </div>
+              <div class="stats-item">
+                <p class="stats-value">4,9 ★</p>
+                <p class="stats-label">Avaliação média</p>
+              </div>
+              <div class="stats-item">
+                <p class="stats-value">24h</p>
+                <p class="stats-label">Tempo médio de liberação</p>
+              </div>
+              <div class="stats-item">
+                <p class="stats-value">1,49%</p>
+                <p class="stats-label">Taxa mínima a.m.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <div class="about-tag">
+              <span class="pill pill--light">
+                <i
+                  data-lucide="building-2"
+                  style="width: 14px; height: 14px"
+                ></i>
+                Quem somos
+              </span>
+            </div>
+            <h2 class="about-title">
+              A Cred Finanças traça o caminho para seu crescimento seguro e
+              sustentável.
+            </h2>
+            <p class="about-p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam
+              officia sint tempore rerum, eos ullam enim quaerat aliquam
+              consequuntur neque, praesentium modi cupiditate perspiciatis
+              debitis velit ratione dolorem odit.
+            </p>
+            <div class="about-checks">
+              <div class="about-check">
+                <i
+                  data-lucide="check-circle-2"
+                  style="width: 20px; height: 20px; color: var(--mainColor)"
+                ></i>
+                Regulamentado pelo Banco Central
+              </div>
+              <div class="about-check">
+                <i
+                  data-lucide="check-circle-2"
+                  style="width: 20px; height: 20px; color: var(--mainColor)"
+                ></i>
+                Dados protegidos com criptografia AES-256
+              </div>
+              <div class="about-check">
+                <i
+                  data-lucide="check-circle-2"
+                  style="width: 20px; height: 20px; color: var(--mainColor)"
+                ></i>
+                Suporte especializado em PMEs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+      PARCEIROS
+  ══════════════════════════════════════ -->
+    <section id="parceiros">
+      <div class="container">
+        <p class="partners-label">Parceiros &amp; Certificações</p>
+
+        <div class="partners-grid">
+          <div class="logo-box"><span>BancoParceiro</span></div>
+          <div class="logo-box"><span>BancoParceiro</span></div>
+          <div class="logo-box"><span>BancoParceiro</span></div>
+          <div class="logo-box"><span>BancoParceiro</span></div>
+          <div class="logo-box"><span>BancoParceiro</span></div>
+          <div class="logo-box"><span>BancoParceiro</span></div>
+        </div>
+
+        <div class="seals-row">
+          <div class="seal">
+            <i
+              data-lucide="shield"
+              style="width: 28px; height: 28px; color: var(--mainColor)"
+            ></i>
+            <div>
+              <p class="seal-name">SSL 256-bit</p>
+              <p class="seal-sub">Conexão segura</p>
+            </div>
+          </div>
+          <div class="seal">
+            <i
+              data-lucide="landmark"
+              style="width: 28px; height: 28px; color: var(--navy)"
+            ></i>
+            <div>
+              <p class="seal-name">CCB Regulamentada</p>
+              <p class="seal-sub">Cédula de Crédito Bancário</p>
+            </div>
+          </div>
+          <div class="seal">
+            <i
+              data-lucide="lock"
+              style="width: 28px; height: 28px; color: var(--mainColor)"
+            ></i>
+            <div>
+              <p class="seal-name">LGPD Compliance</p>
+              <p class="seal-sub">Dados protegidos por lei</p>
+            </div>
+          </div>
+          <div class="seal">
+            <i
+              data-lucide="award"
+              style="width: 28px; height: 28px; color: var(--navy)"
+            ></i>
+            <div>
+              <p class="seal-name">ISO 27001</p>
+              <p class="seal-sub">Segurança da informação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+      CTA BANNER
+  ══════════════════════════════════════ -->
+    <section id="cta" class="hero-bg noise">
+      <div class="container">
+        <div class="cta-inner">
+          <h2 class="cta-title">
+            Pronto para transformar suas vendas a prazo em dinheiro na hora.
+          </h2>
+          <p class="cta-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            aliquid eos facere molestias.
+          </p>
+          <a href="#simulador" class="btn btn--primary btn--lg">
+            Simular gratuitamente
+            <i data-lucide="arrow-right" style="width: 20px; height: 20px"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+      FOOTER
+  ══════════════════════════════════════ -->
+    <footer id="blog">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div>
+              <img src="./img/logoCF.png" alt="" class="logo">
+            </div>
+            <p>
+              Crédito inteligente para empresas que querem crescer sem esperar.
+            </p>
+          </div>
+
+          <div>
+            <p class="footer-col-title">Soluções</p>
+            <ul class="footer-links">
+              <li><a href="#">Antecipação de Recebíveis</a></li>
+              <li><a href="#">Crédito Empresarial</a></li>
+              <li><a href="#">Planejamento Financeiro</a></li>
+              <li><a href="#">Gestão de Fluxo de Caixa</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="footer-col-title">Empresa</p>
+            <ul class="footer-links">
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Trabalhe Conosco</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="footer-col-title">Suporte</p>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i data-lucide="mail" style="width: 16px; height: 16px"></i>
+                  contato@credfinancas.com.br
+              </div>
+              <div class="footer-contact-item">
+                <i data-lucide="phone" style="width: 16px; height: 16px"></i>
+                (19) 3500-7247
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-legal">
+            © 2026 Cred Finanças. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
