@@ -15,12 +15,22 @@
       rel="stylesheet"
     />
 
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
     <!-- GSAP + ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- EmailJs -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
   </head>
   <body>
     <header id="header">
@@ -42,12 +52,12 @@
 
           <div class="header-actions">
             <a
-              href="https://wa.me/1935007247"
+              href="https://wa.me/5519971071383"
               class="btn btn--outline btn--sm client-btn"
               id="cliente-btn"
               target="_blank"
-              >WhatsApp <img src="./img/zappequeno.png" alt="WhatsApp"></a
-            >
+              >WhatsApp <img src="./img/zappequeno.png" alt="WhatsApp"
+            /></a>
             <button
               class="hamburger-btn"
               id="hamburger"
@@ -63,7 +73,12 @@
         <a href="#solucoes" onclick="closeMobileMenu()">Soluções</a>
         <a href="#como-funciona" onclick="closeMobileMenu()">Como Funciona</a>
         <a href="#quem-somos" onclick="closeMobileMenu()">Quem Somos</a>
-        <a href="https://wa.me/1935007247" class="btn btn--primary" target="_blank">WhatsApp</a>
+        <a
+          href="https://wa.me/5519971071383"
+          class="btn btn--primary"
+          target="_blank"
+          >WhatsApp</a
+        >
       </div>
     </header>
     <section id="hero" class="hero-bg noise">
@@ -81,49 +96,42 @@
               </span>
             </div>
             <h1 class="hero-title">
-              Impulsionamos o sucesso do seu negócio com
-              <em>soluções financeiras inteligentes</em>
+              Mais que crédito: <br />
+              <em>uma base para crescer.</em>
             </h1>
             <div class="hero-desc-container">
               <p class="hero-desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
-                natus illum commodi quibusdam molestias enim, numquam sit fugiat
-                cum obcaecati dolorum?
+                Impulsionamos o sucesso do seu negócio com
+                <em>soluções financeiras inteligentes</em>
+                para impulsionar um futuro próspero e seguro
               </p>
             </div>
             <div class="hero-ctas">
-              <a href="#simulador" class="btn btn--primary btn--md">
-                Simular agora
+              <a href="#cta" class="btn btn--primary btn--md">
+                Quero atendimento
                 <i
                   data-lucide="arrow-right"
                   style="width: 16px; height: 16px"
                 ></i>
               </a>
-              <a href="#como-funciona" class="btn btn--outline btn--md">
-                Como funciona
+              <a href="https://wa.me/5519971071383" class="btn btn--outline btn--md" target="_blank">
+                Entrar em contato
               </a>
             </div>
             <div class="trust-badges">
               <div class="trust-badge">
                 <i
-                  data-lucide="shield-check"
-                  style="width: 16px; height: 16px; color: var(--mainColor)"
-                ></i>
-                SSL 256-bit
-              </div>
-              <div class="trust-badge">
-                <i
                   data-lucide="landmark"
                   style="width: 16px; height: 16px; color: var(--mainColor)"
                 ></i>
-                CCB Regulamentado
+                15 anos no mercado
               </div>
               <div class="trust-badge">
                 <i
                   data-lucide="star"
                   style="width: 16px; height: 16px; color: var(--mainColor)"
                 ></i>
-                4.9 ★ (1.200 empresas)
+                + 500 clientes atendidos
               </div>
             </div>
           </div>
@@ -147,21 +155,21 @@
   ══════════════════════════════════════ -->
     <div class="ticker">
       <div class="ticker-inner">
-        <span class="ticker-item">✦ Ainda vai definir</span>
-        <span class="ticker-item">✦ Ainda vai definir2</span>
-        <span class="ticker-item">✦ Ainda vai definir3</span>
-        <span class="ticker-item">✦ Ainda vai definir4</span>
-        <span class="ticker-item">✦ Ainda vai definir5</span>
-        <span class="ticker-item">✦ Ainda vai definir6</span>
-        <span class="ticker-item">✦ Ainda vai definir7</span>
+        <span class="ticker-item">✦ Crescimento</span>
+        <span class="ticker-item">✦ Estratégia</span>
+        <span class="ticker-item">✦ Planejamento</span>
+        <span class="ticker-item">✦ Garantia de liquidez</span>
+        <span class="ticker-item">✦ Segurança</span>
+        <span class="ticker-item">✦ Sustentável</span>
+        <span class="ticker-item">✦ Finanças</span>
         <!-- duplicate for seamless loop -->
-        <span class="ticker-item">✦ Ainda vai definir</span>
-        <span class="ticker-item">✦ Ainda vai definir</span>
-        <span class="ticker-item">✦ Ainda vai definir</span>
-        <span class="ticker-item">✦ Ainda vai definir</span>
-        <span class="ticker-item">✦ Ainda vai definir</span>
-        <span class="ticker-item">✦ Ainda vai definir</span>
-        <span class="ticker-item">✦ Ainda vai definir</span>
+        <span class="ticker-item">✦ Crescimento</span>
+        <span class="ticker-item">✦ Estratégia</span>
+        <span class="ticker-item">✦ Planejamento</span>
+        <span class="ticker-item">✦ Garantia de liquidez</span>
+        <span class="ticker-item">✦ Segurança</span>
+        <span class="ticker-item">✦ Sustentável</span>
+        <span class="ticker-item">✦ Finanças</span>
       </div>
     </div>
 
@@ -186,13 +194,15 @@
           <div class="benefit-card">
             <div class="benefit-icon">
               <i
-                data-lucide="trending-down"
+                data-lucide="trending-up"
                 style="width: 20px; height: 20px"
               ></i>
             </div>
-            <h3 class="benefit-title">Definir ainda</h3>
+            <h3 class="benefit-title">Missão</h3>
             <p class="benefit-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+              Oferecer soluções rápidas e seguras de crédito para empresas que
+              precisam manter seu fluxo de caixa saudável, com transparência e
+              parceria em cada operação.
             </p>
           </div>
 
@@ -203,19 +213,11 @@
                 style="width: 20px; height: 20px"
               ></i>
             </div>
-            <h3 class="benefit-title">Definir ainda</h3>
+            <h3 class="benefit-title">Visão</h3>
             <p class="benefit-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
-            </p>
-          </div>
-
-          <div class="benefit-card benefit-card--emerald">
-            <div class="benefit-icon">
-              <i data-lucide="clock" style="width: 20px; height: 20px"></i>
-            </div>
-            <h3 class="benefit-title">Definir ainda</h3>
-            <p class="benefit-desc">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+              Ser referência em crédito inteligente para pequenas e médias
+              empresas, ajudando nossos clientes a crescer com previsibilidade e
+              confiança.
             </p>
           </div>
 
@@ -223,9 +225,25 @@
             <div class="benefit-icon">
               <i data-lucide="smartphone" style="width: 20px; height: 20px"></i>
             </div>
-            <h3 class="benefit-title">Definir ainda</h3>
+            <h3 class="benefit-title">Valores</h3>
             <p class="benefit-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+              • Transparência em todas as operações <br />
+              • Agilidade nas decisões <br />
+              • Compromisso com o cliente <br />
+              • Segurança nas análises <br />
+              • Relacionamento de longo prazo <br />
+            </p>
+          </div>
+
+          <div class="benefit-card benefit-card--emerald">
+            <div class="benefit-icon">
+              <i data-lucide="clock" style="width: 20px; height: 20px"></i>
+            </div>
+            <h3 class="benefit-title">Diferencial</h3>
+            <p class="benefit-desc">
+              Análise rápida, atendimento próximo e soluções flexíveis.
+              Entendemos a realidade de cada cliente para oferecer crédito na
+              medida certa, sem burocracia desnecessária.
             </p>
           </div>
         </div>
@@ -256,9 +274,10 @@
               </div>
               <span class="step-num">1</span>
             </div>
-            <h3 class="step-title">Definir ainda</h3>
+            <h3 class="step-title">Pré-Análise e Validação Cadastral</h3>
             <p class="step-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+              Pré-análise cadastral: o lead envia a documentação necessária para
+              o cadastro e o comitê retorna com a aprovação ou não.
             </p>
           </div>
 
@@ -274,9 +293,9 @@
               </div>
               <span class="step-num">2</span>
             </div>
-            <h3 class="step-title">Definir ainda</h3>
+            <h3 class="step-title">Formalização do Contrato</h3>
             <p class="step-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+              Se aprovado, assinamos o contrato e já podemos operar
             </p>
           </div>
 
@@ -292,15 +311,17 @@
               </div>
               <span class="step-num">3</span>
             </div>
-            <h3 class="step-title">Definir ainda</h3>
+            <h3 class="step-title">Operação e Antecipação</h3>
             <p class="step-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim sequi repellendus.
+              A partir daí, o cliente só envia as Notas Fiscais para antecipação
+              via e-mail. Analisamos os títulos e a operação é liberada em
+              poucas horas ou até minutos.
             </p>
           </div>
         </div>
 
         <div class="how-cta">
-          <a href="#simulador" class="btn btn--primary btn--md">
+          <a href="#cta" class="btn btn--primary btn--md">
             Começar agora
             <i data-lucide="arrow-right" style="width: 18px; height: 18px"></i>
           </a>
@@ -316,24 +337,22 @@
         <div class="about-grid">
           <div class="stats-card noise">
             <div class="stats-card-glow"></div>
-            <p class="stats-total">+R$ 2,4 bi</p>
-            <p class="stats-total-sub">em recebíveis antecipados</p>
+            <p class="stats-total">+500 clientes</p>
+            <p class="stats-total-sub">
+              15 anos de experiência e resultados comprovados com essas soluções
+            </p>
             <div class="stats-grid">
               <div class="stats-item">
-                <p class="stats-value">1.200+</p>
-                <p class="stats-label">Empresas atendidas</p>
+                <p class="stats-value">Antecipação de recebíveis.</p>
               </div>
               <div class="stats-item">
-                <p class="stats-value">4,9 ★</p>
-                <p class="stats-label">Avaliação média</p>
+                <p class="stats-value">Crédito estruturado.</p>
               </div>
               <div class="stats-item">
-                <p class="stats-value">24h</p>
-                <p class="stats-label">Tempo médio de liberação</p>
+                <p class="stats-value">Capital de Giro.</p>
               </div>
               <div class="stats-item">
-                <p class="stats-value">1,49%</p>
-                <p class="stats-label">Taxa mínima a.m.</p>
+                <p class="stats-value">Consultoria financeira.</p>
               </div>
             </div>
           </div>
@@ -349,14 +368,15 @@
               </span>
             </div>
             <h2 class="about-title">
-              A Cred Finanças traça o caminho para seu crescimento seguro e
-              sustentável.
+              A Cred Finanças traça o caminho para seu crescimento.
             </h2>
             <p class="about-p">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam
-              officia sint tempore rerum, eos ullam enim quaerat aliquam
-              consequuntur neque, praesentium modi cupiditate perspiciatis
-              debitis velit ratione dolorem odit.
+              Crédito inteligente para empresas que não param de crescer. Somos
+              especialistas em antecipação de recebíveis e crédito estruturado —
+              soluções sob medida para quem precisa de liquidez agora e capital
+              para crescer depois. Sem enrolação. Sem modelo genérico. Só
+              estratégia focada no seu negócio. Seu caixa não pode esperar. A
+              gente também não.
             </p>
             <div class="about-checks">
               <div class="about-check">
@@ -364,83 +384,22 @@
                   data-lucide="check-circle-2"
                   style="width: 20px; height: 20px; color: var(--mainColor)"
                 ></i>
-                Regulamentado pelo Banco Central
+                Diagnóstico completo
               </div>
               <div class="about-check">
                 <i
                   data-lucide="check-circle-2"
                   style="width: 20px; height: 20px; color: var(--mainColor)"
                 ></i>
-                Dados protegidos com criptografia AES-256
+                Medida para grandes projetos
               </div>
               <div class="about-check">
                 <i
                   data-lucide="check-circle-2"
                   style="width: 20px; height: 20px; color: var(--mainColor)"
                 ></i>
-                Suporte especializado em PMEs
+                Agilidade e as melhores taxas
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-      PARCEIROS
-  ══════════════════════════════════════ -->
-    <section id="parceiros">
-      <div class="container">
-        <p class="partners-label">Parceiros &amp; Certificações</p>
-
-        <div class="partners-grid">
-          <div class="logo-box"><span>BancoParceiro</span></div>
-          <div class="logo-box"><span>BancoParceiro</span></div>
-          <div class="logo-box"><span>BancoParceiro</span></div>
-          <div class="logo-box"><span>BancoParceiro</span></div>
-          <div class="logo-box"><span>BancoParceiro</span></div>
-          <div class="logo-box"><span>BancoParceiro</span></div>
-        </div>
-
-        <div class="seals-row">
-          <div class="seal">
-            <i
-              data-lucide="shield"
-              style="width: 28px; height: 28px; color: var(--mainColor)"
-            ></i>
-            <div>
-              <p class="seal-name">SSL 256-bit</p>
-              <p class="seal-sub">Conexão segura</p>
-            </div>
-          </div>
-          <div class="seal">
-            <i
-              data-lucide="landmark"
-              style="width: 28px; height: 28px; color: var(--navy)"
-            ></i>
-            <div>
-              <p class="seal-name">CCB Regulamentada</p>
-              <p class="seal-sub">Cédula de Crédito Bancário</p>
-            </div>
-          </div>
-          <div class="seal">
-            <i
-              data-lucide="lock"
-              style="width: 28px; height: 28px; color: var(--mainColor)"
-            ></i>
-            <div>
-              <p class="seal-name">LGPD Compliance</p>
-              <p class="seal-sub">Dados protegidos por lei</p>
-            </div>
-          </div>
-          <div class="seal">
-            <i
-              data-lucide="award"
-              style="width: 28px; height: 28px; color: var(--navy)"
-            ></i>
-            <div>
-              <p class="seal-name">ISO 27001</p>
-              <p class="seal-sub">Segurança da informação</p>
             </div>
           </div>
         </div>
@@ -456,14 +415,28 @@
           <h2 class="cta-title">
             Pronto para transformar suas vendas a prazo em dinheiro na hora.
           </h2>
-          <p class="cta-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            aliquid eos facere molestias.
-          </p>
-          <a href="#simulador" class="btn btn--primary btn--lg">
-            Simular gratuitamente
-            <i data-lucide="arrow-right" style="width: 20px; height: 20px"></i>
-          </a>
+
+          <form id="FormCred">
+            <label for="Nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome" id="Nome" required/>
+
+            <label for="Email">Email:</label>
+            <input type="text" placeholder="Digite seu email" id="Email" required/>
+
+            <label for="Telefone">Telefone:</label>
+            <input type="text" placeholder="+5519123456789" id="Telefone" required/>
+
+            <label for="Empresa">Empresa:</label>
+            <input type="text" placeholder="Digite o nome da sua empresa" id="Empresa" required/>
+
+            <label for="CNPJ">CNPJ:</label>
+            <input type="text" placeholder="Digite o CNPJ da sua empresa" id="CNPJ" required/>
+
+            <label for="Faturamento">Faturamento Mensal:</label>
+            <input type="text" placeholder="Digite o faturamento mensal da sua empresa" id="Faturamento" required/>
+
+            <button type="submit" id="btn-submit">Enviar seu sucesso!</button>
+          </form>
         </div>
       </div>
     </section>
@@ -476,7 +449,7 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div>
-              <img src="./img/logoCF.png" alt="" class="logo">
+              <img src="./img/logoCF.png" alt="" class="logo btn--outline" />
             </div>
             <p>
               Crédito inteligente para empresas que querem crescer sem esperar.
@@ -494,10 +467,10 @@
           </div>
 
           <div>
-            <p class="footer-col-title">Empresa</p>
+            <p class="footer-col-title">Certificações</p>
             <ul class="footer-links">
-              <li><a href="#">Quem Somos</a></li>
-              <li><a href="#">Trabalhe Conosco</a></li>
+              <li><a href="#">LGPD Compliance</a></li>
+              <li><a href="#">Dados protegidos por lei</a></li>
             </ul>
           </div>
 
@@ -506,7 +479,7 @@
             <div class="footer-contact">
               <div class="footer-contact-item">
                 <i data-lucide="mail" style="width: 16px; height: 16px"></i>
-                  contato@credfinancas.com.br
+                contato@credfinancas.com.br
               </div>
               <div class="footer-contact-item">
                 <i data-lucide="phone" style="width: 16px; height: 16px"></i>
