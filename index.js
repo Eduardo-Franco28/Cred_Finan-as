@@ -27,7 +27,7 @@ document.getElementById("FormCred").addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch(
-      "https://formsubmit.co/ajax/edu.franco2811@gmail.com",
+      "https://formsubmit.co/ajax/joao.franco@credfinancas.com.br",
       {
         method: "POST",
         body: formData,
@@ -41,7 +41,7 @@ document.getElementById("FormCred").addEventListener("submit", async (e) => {
         text: "Sua mensagem foi enviada com sucesso, em breve nosso time entrará em contato!",
         duration: 3000,
         style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
+          background: "linear-gradient(to right, #00b09b, #86b338)",
         },
       }).showToast();
 
